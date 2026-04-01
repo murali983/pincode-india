@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>PinCode App</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>PinCode Search</h2>
+
+<input id="searchInput" onkeyup="showSuggestions()" placeholder="Search...">
+<div id="suggestions"></div>
+<button onclick="handleSearch()">Search</button>
+
+<br><br>
+
+<select id="districtFilter" onchange="filterDistrict()">
+<option value="">All Districts</option>
+<option value="Anantapur">Anantapur</option>
+<option value="Kurnool">Kurnool</option>
+</select>
+
+<div id="resultsGrid"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
